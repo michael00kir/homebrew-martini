@@ -21,7 +21,8 @@ class Martini < Formula
   end
 
   test do
-    # Simple test to ensure the binary runs
-    assert_match "Martini Started", shell_output("#{bin}/Martini --help", 0)
+    # Verify that the binary exists and can run
+    # We look for the "Martini Started" string printed in main.swift
+    assert_match "Martini Started", shell_output("#{bin}/Martini --version", 0)
   end
 end
