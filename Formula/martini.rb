@@ -2,7 +2,7 @@ class Martini < Formula
   desc "Professional Zsh Terminal & CLI orchestrator built in Swift"
   homepage "https://github.com/michael00kir/martini"
   url "https://github.com/michael00kir/martini/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "REPLACE_WITH_YOUR_ACTUAL_SHA256_HASH"
+  sha256 ""
   license "MIT"
 
   depends_on :xcode => ["26.3", :build]
