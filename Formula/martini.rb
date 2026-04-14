@@ -5,7 +5,7 @@ class Martini < Formula
   # When using tag/revision, Homebrew often prefers the version 
   # to be defined explicitly or inferred correctly from the tag.
   url "https://github.com/michael00kir/martini.git",
-      tag:      "1.0.1",
+      tag:      "1.0.0",
       revision: "574c86e88c07e6005d535359a16f849b67919812" # Example hash
   
   # Explicitly define the version to prevent 'version (nil)' errors
