@@ -12,7 +12,7 @@ class Martini < Formula
   version "1.0.1" 
   license "MIT"
 
-  depends_on :xcode => ["26.3", :build]
+  depends_on :xcode => ["26.4", :build]
 
   def install
     # Based on your project.pbxproj, the target is Martini
