@@ -9,7 +9,7 @@ class Martini < Formula
       revision: "574c86e88c07e6005d535359a16f849b67919812" # Example hash
   
   # Explicitly define the version to prevent 'version (nil)' errors
-  version "1.0.1" 
+  version "1.0.0" 
   license "MIT"
 
   depends_on :xcode => ["26.3", :build]
