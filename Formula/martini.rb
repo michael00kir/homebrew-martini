@@ -1,8 +1,10 @@
 class Martini < Formula
   desc "Professional Zsh Terminal & CLI orchestrator built in Swift"
   homepage "https://github.com/michael00kir/martini"
-  url "https://github.com/michael00kir/martini/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 ""
+  # Use the #{version} variable so the automation can swap it easily
+  url "https://github.com/michael00kir/martini/archive/refs/tags/v#{version}.tar.gz"
+  version "1.0.1" # The automation will update this line automatically
+  sha256 "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff"
   license "MIT"
 
   depends_on :xcode => ["26.3", :build]
