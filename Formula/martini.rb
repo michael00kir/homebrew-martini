@@ -7,6 +7,6 @@ class Martini < Formula
   def install
     # Since it's notarized, Homebrew just moves it to the bin folder.
     # macOS will recognize the notarization ticket upon first run.
-    bin.install "martini"
+    bin.install "Martini"
   end
 end
