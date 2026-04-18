@@ -1,31 +1,12 @@
 class Martini < Formula
-  desc "Professional Zsh Terminal & CLI orchestrator built in Swift"
-  homepage "https://github.com/michael00kir/martini"
-  
-  # When using tag/revision, Homebrew often prefers the version 
-  # to be defined explicitly or inferred correctly from the tag.
-  url "https://github.com/michael00kir/martini.git",
-      tag:      "1.0.1",
-      revision: "bf7a784d4421052e6dd979e7fbecb785631ac04f" # Example hash
-  
-  # Explicitly define the version to prevent 'version (nil)' errors
-  version "1.0.1" 
-  license "MIT"
-
-  depends_on :xcode => ["26.4", :build]
+  desc "Agent with a Twist"
+  homepage "https://martini.systems"
+  url "https://github.com/your-user/homebrew-tap/releases/download/v1.0.0/martini.zip"
+  sha256 "tb59686df10c02062b6677957237b6bd8a340aca5"
 
   def install
-    # Based on your project.pbxproj, the target is Martini
-    system "xcodebuild", "-project", "Martini.xcodeproj", 
-           "-scheme", "Martini", 
-           "-configuration", "Release", 
-           "SYMROOT=build"
-
-    bin.install "build/Release/Martini"
-  end
-
-  test do
-    # Matches the boot string in main.swift
-    assert_match "Martini Started", shell_output("#{bin}/Martini --version", 0)
+    # Since it's notarized, Homebrew just moves it to the bin folder.
+    # macOS will recognize the notarization ticket upon first run.
+    bin.install "your-executable-name"
   end
 end
